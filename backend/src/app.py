@@ -53,7 +53,7 @@ def predictinterestrate():
         input_data = []
         for feature in features:
             try:
-                input_data.append(int(data[feature]))
+                input_data.append(data[feature])
             except ValueError:
                 return jsonify({"error": f"Invalid value for {feature}, must be numeric"}), 400
         
@@ -85,7 +85,7 @@ def prediccustomersegmentation():
         input_data = []
         for feature in features:
             try:
-                input_data.append(int(data[feature]))
+                input_data.append(data[feature])
             except ValueError:
                 return jsonify({"error": f"Invalid value for {feature}, must be numeric"}), 400
 

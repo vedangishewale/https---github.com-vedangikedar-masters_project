@@ -3,16 +3,16 @@ import './InterestRatePredictionPage.css';
 
 const InterestRatePredictionPage = () => {
   const [formData, setFormData] = useState({
-    Beacon_Score: '',
-    Services: '',
-    Avg_Monthly_Transactions: '',
-    Has_Payroll: '',
-    Has_Investment: '',
-    Has_Visa: '',
-    Age: '',
-    Tenure_In_Months: '',
-    TermToMaturity: '',
-    NumberOfParties: ''
+    Beacon_Score: 0,
+    Services: 0,
+    Avg_Monthly_Transactions: 0,
+    Has_Payroll: 0,
+    Has_Investment: 0,
+    Has_Visa: 0,
+    Age: 0,
+    Tenure_In_Months: 0,
+    TermToMaturity: 0,
+    NumberOfParties: 0
   });
 
   const [prediction, setPrediction] = useState(null);
